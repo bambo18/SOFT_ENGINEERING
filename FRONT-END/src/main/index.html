@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>스마트 주차장 관리 시스템</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>스마트 주차장 관리 시스템</h1>
+    <p>실시간 주차 공간 상태 확인</p>
+  </header>
+
+  <main class="container">
+    <section class="summary-card">
+      <h2>주차장 현황</h2>
+      <div class="summary-grid">
+        <div class="summary-item">
+          <span class="label">전체 주차칸</span>
+          <span id="totalCount" class="value">0</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">빈 주차칸</span>
+          <span id="emptyCount" class="value empty-text">0</span>
+        </div>
+        <div class="summary-item">
+          <span class="label">사용 중</span>
+          <span id="occupiedCount" class="value occupied-text">0</span>
+        </div>
+      </div>
+      <p id="lastUpdated" class="updated-text">마지막 갱신: -</p>
+      <button id="refreshBtn" class="refresh-btn">새로고침</button>
+    </section>
+
+    <section>
+      <h2>주차칸 상태</h2>
+      <div id="parkingGrid" class="parking-grid"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

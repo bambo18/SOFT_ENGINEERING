@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #222;
+}
+
+.header {
+  background-color: #1f4fa3;
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.header h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px 32px;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.summary-item {
+  background: #eef3ff;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.value {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.empty-text {
+  color: #1d8f3f;
+}
+
+.occupied-text {
+  color: #c0392b;
+}
+
+.updated-text {
+  margin: 12px 0;
+  color: #555;
+}
+
+.refresh-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1f4fa3;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.refresh-btn:hover {
+  background-color: #173b79;
+}
+
+.parking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.slot-card {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 8px solid #ccc;
+}
+
+.slot-card.empty {
+  border-top-color: #1d8f3f;
+}
+
+.slot-card.occupied {
+  border-top-color: #c0392b;
+}
+
+.slot-card.unknown {
+  border-top-color: #7f8c8d;
+}
+
+.slot-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.slot-status {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.slot-distance {
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
