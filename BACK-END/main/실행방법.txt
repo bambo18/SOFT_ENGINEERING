@@ -1,0 +1,5 @@
+패키지 설치
+npm init -y
+npm install express
+실행
+node server.js
